@@ -1,0 +1,21 @@
+{
+  "name": "flexy-login",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flexy-design/flexy-login.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/flexy-design/flexy-login/issues"
+  },
+  "homepage": "https://github.com/flexy-design/flexy-login#readme",
+  "bin": {
+    "flexy-login": "bin/flexy-login.js"
+  }
+}
