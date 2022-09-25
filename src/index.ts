@@ -1,5 +1,5 @@
 import chalk from 'chalk'
-import { writeFileSync } from 'fs'
+import { readFileSync, writeFileSync } from 'fs'
 import inquirer from 'inquirer'
 import path from 'path'
 
@@ -14,7 +14,12 @@ void (async () => {
  /_/   /_____/_____//_/|_|  /_/`)
   )
 
-  console.log(chalk.blueBright(`\nWelcome to Flexy CLI!`))
+  const moduleJsonPath = path.resolve(__dirname, '../package.json')
+  const packageJson = JSON.parse(String(readFileSync(moduleJsonPath)))
+
+  console.log(
+    chalk.blueBright(`\nWelcome to Flexy CLI! (${packageJson.version})`)
+  )
   console.log(chalk.blueBright(`Please type figma token to continue.\n`))
 
   console.log(chalk.blueBright(`You can get your token here:`))

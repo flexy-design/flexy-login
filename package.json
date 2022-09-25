@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm run build && ([ -d test-e2e ] || mkdir test-e2e) && cd test-e2e && node ../bin/flexy-login",
     "build": "rm -rf dist && tsc",
-    "release": "release-it"
+    "release": "npm run build && release-it"
   },
   "repository": {
     "type": "git",
